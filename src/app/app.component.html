@@ -1,0 +1,10 @@
+<h1>
+  Welcome to {{ title }}!
+</h1>
+{{user.firstname}}
+{{user.lastname}}
+{{user.email}}
+{{user.password}}
+<app-child1 [createdObject$] = "receivedObject$">
+</app-child1>
+<app-child2 [outputObject$]="receivedObject$"></app-child2>

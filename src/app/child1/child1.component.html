@@ -1,0 +1,21 @@
+<div class="container" [formGroup]="userForm">
+  <div class="jumbotron">
+    <div class="form-group">
+      <label for="name">Firstname:</label>
+      <input type="text" class="form-control" formControlName="firstname">
+    </div>
+    <div class="form-group">
+      <label for="name">Lastname:</label>
+      <input type="text" class="form-control" formControlName="lastname">
+    </div>
+    <div class="form-group">
+      <label for="name">Email:</label>
+      <input type="email" class="form-control" formControlName="email">
+    </div>
+    <div class="form-group">
+      <label for="name">Password:</label>
+      <input type="passord" class="form-control" formControlName="password">
+    </div>
+    <button type="button" class="btn btn-primary" (click)="getData(userForm.value)">Click Me!</button>
+  </div>
+</div>
